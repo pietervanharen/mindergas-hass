@@ -1,0 +1,39 @@
+name: Validate
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Validate manifest
+        run: |
+          python -m json.tool custom_components/mindergas/manifest.json > /dev/null
+          
+      - name: Validate translations
+        run: |
+          python -m json.tool custom_components/mindergas/translations/en.json > /dev/null
+          python -m json.tool custom_components/mindergas/translations/nl.json > /dev/null
+          
+      - name: Validate HACS config
+        run: |
+          python -m json.tool hacs.json > /dev/null
+      
+      - name: Check Python syntax
+        run: |
+          python -m py_compile custom_components/mindergas/*.py
