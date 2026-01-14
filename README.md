@@ -6,6 +6,8 @@
 
 > **Note on API Usage:** This integration uses the MinderGas API. The first 3 months are free. After the trial period, a small annual fee of €2.99 is charged. See [MinderGas API documentation](https://mindergas.nl/member/api) for usage guidelines and restrictions.
 
+> **Affiliation** The maintainer(s) of this repository are in no way affilieated with MinderGas.
+
 A fully-featured Home Assistant integration for monitoring your gas consumption via the MinderGas API.
 
 ## ✨ Features
