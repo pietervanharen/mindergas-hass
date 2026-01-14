@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "domain": "mindergas",
+  "name": "MinderGas",
+  "codeowners": ["@pietervanharen"],
+  "config_flow": true,
+  "options_flow": true,
+  "documentation": "https://github.com/pietervanharen/mindergas-hass",
+  "issue_tracker": "https://github.com/pietervanharen/mindergas-hass/issues",
+  "requirements": ["aiohttp>=3.8.0"],
+  "version": "1.0.0",
+  "homeassistant": "2026.1.0"
+}

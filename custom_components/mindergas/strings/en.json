@@ -1,0 +1,30 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to MinderGas",
+        "description": "Enter your MinderGas API key. You can obtain it from the [MinderGas API page](https://www.mindergas.nl/api).",
+        "data": {
+          "api_key": "API Key"
+        }
+      },
+      "meter_config": {
+        "title": "Meter Reading Configuration",
+        "description": "Configure automatic meter reading uploads to MinderGas.",
+        "data": {
+          "post_meter_reading": "Upload meter readings to MinderGas",
+          "post_time": "Time to upload meter reading",
+          "post_meter_entity_id": "Meter reading sensor entity"
+        }
+      },
+      "stats_config": {
+        "title": "Statistics Update Configuration",
+        "description": "Configure automatic updates of usage statistics and forecasts.",
+        "data": {
+          "update_stats": "Update usage statistics",
+          "update_time": "Time to update statistics"
+        }
+      }
+    }
+  }
+}

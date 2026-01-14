@@ -1,0 +1,77 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to MinderGas",
+        "description": "Enter your MinderGas API key. You can obtain it from the [MinderGas API page](https://www.mindergas.nl/api).",
+        "data": {
+          "api_key": "API Key"
+        },
+        "data_description": {
+          "api_key": "Your MinderGas API authentication token"
+        }
+      },
+      "meter_config": {
+        "title": "Meter Reading Configuration",
+        "description": "Configure automatic meter reading uploads to MinderGas. For reliable operation, uploads should occur between **00:05** and **01:00** to spread server load and avoid errors. You can either specify a fixed time or enable random scheduling.",
+        "data": {
+          "post_meter_reading": "Upload meter readings to MinderGas",
+          "post_time": "Time to upload meter reading (HH:MM)",
+          "post_meter_entity_id": "Meter reading sensor entity",
+          "randomize_post_time": "Use random time within upload window"
+        },
+        "data_description": {
+          "post_meter_reading": "Enable automatic daily meter reading uploads",
+          "post_time": "Time of day to post the meter reading (must be between 00:05 and 01:00)",
+          "post_meter_entity_id": "Select the sensor entity that contains your current meter reading",
+          "randomize_post_time": "If enabled, a random time between 00:05 and 01:00 will be chosen each day"
+        }
+      },
+      "stats_config": {
+        "title": "Statistics Update Configuration",
+        "description": "Configure automatic updates of usage statistics and forecasts from MinderGas.",
+        "data": {
+          "update_stats": "Update usage statistics",
+          "update_time": "Time to update statistics (HH:MM)"
+        },
+        "data_description": {
+          "update_stats": "Enable automatic updates of yearly usage, forecasts, and degree day statistics",
+          "update_time": "Time of day to fetch the latest statistics (should be after meter reading time)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid API key - please check and try again",
+      "invalid_api_key": "Invalid API key",
+      "cannot_connect": "Failed to connect to MinderGas API",
+      "required": "This field is required when meter reading upload is enabled",
+      "time_out_of_window": "Time must be between 00:05 and 01:00"
+    },
+    "abort": {
+      "already_configured": "MinderGas is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Modify MinderGas Settings",
+        "description": "Update your MinderGas integration settings",
+        "data": {
+          "post_meter_reading": "Upload meter readings to MinderGas",
+          "post_time": "Time to upload meter reading (HH:MM)",
+          "randomize_post_time": "Use random time within upload window",
+          "update_stats": "Update usage statistics",
+          "update_time": "Time to update statistics (HH:MM)"
+        },
+        "data_description": {
+          "post_meter_reading": "Enable automatic daily meter reading uploads",
+          "post_time": "Time of day to post the meter reading (must be between 00:05 and 01:00)",
+          "randomize_post_time": "If enabled, a random time between 00:05 and 01:00 will be chosen each day",
+          "update_stats": "Enable automatic updates of yearly usage, forecasts, and degree day statistics",
+          "update_time": "Time of day to fetch the latest statistics (should be after meter reading time)"
+        }
+      }
+    }
+  }
+}
+

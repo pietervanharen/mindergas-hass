@@ -1,0 +1,76 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Verbind met MinderGas",
+        "description": "Voer uw MinderGas API-sleutel in. U kunt deze verkrijgen op de [MinderGas API-pagina](https://www.mindergas.nl/api).",
+        "data": {
+          "api_key": "API-sleutel"
+        },
+        "data_description": {
+          "api_key": "Uw MinderGas API-verificatietoken"
+        }
+      },
+      "meter_config": {
+        "title": "Configuratie Meterstand Uploaden",
+        "description": "Configureer automatische uploads van meterstanden naar MinderGas. Voor betrouwbare werking moeten uploads tussen **00:05** en **01:00** plaatsvinden om de serverbelasting te spreiden. U kunt een vast tijdstip instellen of willekeurige planning inschakelen.",
+        "data": {
+          "post_meter_reading": "Upload meterstanden naar MinderGas",
+          "post_time": "Tijd voor upload meterstand (HH:MM)",
+          "post_meter_entity_id": "Sensor-entiteit voor meterstand",
+          "randomize_post_time": "Gebruik willekeurig moment binnen uploadvenster"
+        },
+        "data_description": {
+          "post_meter_reading": "Schakel automatische dagelijkse uploads van meterstanden in",
+          "post_time": "Dagelijks moment voor upload van de meterstand (moet tussen 00:05 en 01:00 liggen)",
+          "post_meter_entity_id": "Selecteer de sensor-entiteit die uw huidige meterstand bevat",
+          "randomize_post_time": "Indien ingeschakeld, wordt elke dag een willekeurig moment tussen 00:05 en 01:00 gekozen"
+        }
+      },
+      "stats_config": {
+        "title": "Configuratie Statistieken Update",
+        "description": "Configureer automatische updates van verbruiksstatistieken en prognoses van MinderGas.",
+        "data": {
+          "update_stats": "Update verbruiksstatistieken",
+          "update_time": "Tijd voor update statistieken (HH:MM)"
+        },
+        "data_description": {
+          "update_stats": "Schakel automatische updates van jaarlijks verbruik, prognoses en graaddagstatistieken in",
+          "update_time": "Dagelijks moment voor het ophalen van de nieuwste statistieken (moet na de meterstandupload plaatsvinden)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Ongeldige API-sleutel - controleer en probeer opnieuw",
+      "invalid_api_key": "Ongeldige API-sleutel",
+      "cannot_connect": "Kan geen verbinding maken met MinderGas API",
+      "required": "Dit veld is verplicht wanneer upload van meterstand is ingeschakeld",
+      "time_out_of_window": "Tijd moet tussen 00:05 en 01:00 liggen"
+    },
+    "abort": {
+      "already_configured": "MinderGas is al geconfigureerd"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "MinderGas-instellingen wijzigen",
+        "description": "Update uw MinderGas integratie-instellingen",
+        "data": {
+          "post_meter_reading": "Upload meterstanden naar MinderGas",
+          "post_time": "Tijd voor upload meterstand (HH:MM)",
+          "randomize_post_time": "Gebruik willekeurig moment binnen uploadvenster",
+          "update_stats": "Update verbruiksstatistieken",
+          "update_time": "Tijd voor update statistieken (HH:MM)"
+        },
+        "data_description": {
+          "post_meter_reading": "Schakel automatische dagelijkse uploads van meterstanden in",
+          "post_time": "Dagelijks moment voor upload van de meterstand (moet tussen 00:05 en 01:00 liggen)",
+          "randomize_post_time": "Indien ingeschakeld, wordt elke dag een willekeurig moment tussen 00:05 en 01:00 gekozen",
+          "update_stats": "Schakel automatische updates van jaarlijks verbruik, prognoses en graaddagstatistieken in",
+          "update_time": "Dagelijks moment voor het ophalen van de nieuwste statistieken (moet na de meterstandupload plaatsvinden)"
+        }
+      }
+    }
+  }
+}
