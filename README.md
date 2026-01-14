@@ -4,6 +4,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2024.1%2B-blue)](https://www.home-assistant.io/)
 
+> **Note on API Usage:** This integration uses the MinderGas API. The first 3 months are free. After the trial period, a small annual fee of €2.99 is charged. See [MinderGas API Terms](#api-terms) for usage guidelines and restrictions.
+
 A fully-featured Home Assistant integration for monitoring your gas consumption via the MinderGas API.
 
 ## ✨ Features
@@ -129,6 +131,28 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 ## 💡 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📋 API Terms {#api-terms}
+
+This integration uses the MinderGas API. Please be aware of the following:
+
+**Costs:**
+- First 3 months: **Free** (trial period starts when you generate your API token)
+- After trial: **€2.99/year** (paid via iDEAL on MinderGas website)
+
+**Usage Guidelines:**
+- ✅ Upload meter readings **once per day or less frequently**
+- ✅ Fetch consumption data **only when needed** (not every few minutes)
+- ✅ Use API only for **your own account and data**
+- ⚠️ MinderGas reserves the right to block API access for excessive/improper usage
+
+**API Capabilities:**
+- Upload meter readings to your account
+- Retrieve total consumption and heating consumption for current year
+- Retrieve consumption forecast for current year
+- Get average consumption per degree day (last 365 days)
+
+For more information, visit [MinderGas API Documentation](https://www.mindergas.nl/api)
 
 ---
 
