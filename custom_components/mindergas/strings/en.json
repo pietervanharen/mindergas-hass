@@ -3,7 +3,7 @@
     "step": {
       "user": {
         "title": "Connect to MinderGas",
-        "description": "Enter your MinderGas API key. You can obtain it from the [MinderGas API page](https://www.mindergas.nl/api).",
+        "description": "Enter your MinderGas API key. You can obtain it from the [MinderGas API page](https://mindergas.nl/member/api).",
         "data": {
           "api_key": "API Key"
         }

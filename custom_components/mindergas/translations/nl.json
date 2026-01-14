@@ -3,7 +3,7 @@
     "step": {
       "user": {
         "title": "Verbind met MinderGas",
-        "description": "Voer uw MinderGas API-sleutel in. U kunt deze verkrijgen op de [MinderGas API-pagina](https://www.mindergas.nl/api).",
+        "description": "Voer uw MinderGas API-sleutel in. U kunt deze verkrijgen op de [MinderGas API-pagina](https://mindergas.nl/member/api).",
         "data": {
           "api_key": "API-sleutel"
         },
