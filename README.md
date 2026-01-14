@@ -43,7 +43,7 @@ A fully-featured Home Assistant integration for monitoring your gas consumption 
 3. Follow the setup wizard:
 
 ### Step 1: API Configuration
-- Get your **API key** from [MinderGas Settings](https://www.mindergas.nl/api)
+- Get your **API key** from [MinderGas Settings](https://mindergas.nl/member/api)
 - Paste it into the integration setup
 
 ### Step 2: Meter Reading (Optional)
@@ -95,7 +95,7 @@ Your MinderGas API key is stored securely in Home Assistant:
 
 **Never share your API key** - it grants full access to your MinderGas account.
 
-Get your free API key: [MinderGas API Dashboard](https://www.mindergas.nl/api)
+Get your free API key: [MinderGas API Dashboard](https://mindergas.nl/member/api)
 
 ## 📋 Requirements
 
@@ -155,5 +155,3 @@ This integration uses the MinderGas API. Please be aware of the following:
 For more information, visit [MinderGas API documentation](https://mindergas.nl/member/api)
 
 ---
-
-**Tip**: Use Home Assistant automations to trigger meter reading submissions at specific times or when certain conditions are met.
